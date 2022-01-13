@@ -83,4 +83,105 @@ nav ul li a i{
 /* ==========================*\
         Navegation end
 |*============================*/
-
+.home-content{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+}
+.home-content ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+}
+.home-content ul li{
+    background-color: var(--primary);
+    position: absolute;
+    display: block;
+    list-style: none;
+    animation: boxAnimation 25s linear infinite;
+    transform: translateY(80rem);
+}
+.home-content li:nth-child(1){
+    left: 25%;
+    width: 8rem;
+    height: 8rem;
+    animation-delay: 0s;
+}
+.home-content li:nth-child(2){
+    left: 10%;
+    width: 2rem;
+    height: 2rem;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+.home-content li:nth-child(3){
+    left: 70%;
+    width: 2rem;
+    height: 2rem;
+    animation-delay: 4s;
+}
+.home-content li:nth-child(4){
+    left: 40%;
+    width: 6rem;
+    height: 6rem;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+.home-content li:nth-child(5){
+    left: 65%;
+    width: 2rem;
+    height: 2rem;
+    animation-delay: 0s;
+}
+.home-content li:nth-child(6){
+    left: 75%;
+    width: 11rem;
+    height: 11rem;
+    animation-delay: 3s;
+}
+.home-content li:nth-child(7){
+    left: 35%;
+    width: 15rem;
+    height: 15rem;
+    animation-delay: 7s;
+}
+.home-content li:nth-child(8){
+    left: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+.home-content li:nth-child(9){
+    left: 20%;
+    width: 1.5rem;
+    height: 1.5rem;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+.home-content li:nth-child(10){
+    left: 85%;
+    width: 15rem;
+    height: 15rem;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+/* ================================*\
+        Box Animation
+\*================================ */
+@keyframes boxAnimation {
+    100%{
+        transform: translateY(-20rem) rotate(720deg);
+        border-radius: 50%;
+        opacity: 0;
+    }
+}
+/* ====================================== */
+/* Dotted creation with ---background: radial-gradient(circle at center, #ff5722 10%, transparent 20%), transparent; */
+.bg-dotted{
+    height
+}
