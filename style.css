@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -7,12 +8,15 @@
 html,body{
     overflow-x: hidden;
     font-size: 62.5%;
+    background-color: var(--bodyBG);
+    font-family: 'Raleway', sans-serif;
 }
 /* Color */
 :root{
     --primary: #009688;
     --bg: #383838;
     --txt_color: #fff;
+    --bodyBG: #292929;
 }
 /* ========================== */
 nav label {
@@ -58,6 +62,7 @@ nav ul{
     z-index: 10;
     transform: translateX(150%);
     transition: transform 250ms ease-in-out;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.281);
 }
 nav ul li{
     list-style: none;
@@ -70,6 +75,7 @@ nav ul li a{
     font-size: 1.8rem;
     font-weight: 700;
     transition: color .1s ease-in;
+    text-transform: uppercase;
 }
 nav ul li a.selected,nav ul li a:hover{
     color: var(--primary);
@@ -192,3 +198,46 @@ nav ul li a i{
     top: -15rem;
     left: -12rem;
 }
+/* =========Dotted background end============= */
+/* ==========Main content start================= */
+.main-content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main-content .first-header{
+    font-size: 5rem;
+    font-weight: 400;
+    color: var(--txt_color);
+    position: relative;
+    left: -19.5rem;
+}
+.main-content .own_name{
+    font-size: 19rem;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    color: transparent;
+    margin-top: -5rem;
+    background-image: url(./images/back.png);
+    background-repeat: no-repeat;
+    background-size: 63rem 22rem;
+    background-position: 0 6rem;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px var(--txt_color);
+    animation: textAmination 3s linear infinite forwards;
+}
+@keyframes textAmination {
+    100%{
+        background-position: 20rem 0;
+    }
+}
+.main-content h5{
+    position: relative;
+    left: -10rem;
+    color: var(--txt_color);
+    font-size: 2rem;
+}
+/* ==============Main content animation done============= */
