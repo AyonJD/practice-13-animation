@@ -183,5 +183,12 @@ nav ul li a i{
 /* ====================================== */
 /* Dotted creation with ---background: radial-gradient(circle at center, #ff5722 10%, transparent 20%), transparent; */
 .bg-dotted{
-    height
+    background: radial-gradient(circle at center, var(--primary) 10%, transparent 20%), transparent;
+    background-size: 19px 18px;
+    height: 30rem;
+    width: 26rem;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -15rem;
+    left: -12rem;
 }
