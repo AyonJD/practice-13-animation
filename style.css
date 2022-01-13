@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+/* Color */
+:root{
+    --primary: #009688;
+    --bg: #383838;
+    --txt_color: #fff;
+}
+/* ========================== */
+nav label {
+    
+}
+nav>input[type="checkbox"]{
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    display: none;
+}
+nav>label{
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    z-index: 11;
+    animation: spinner .8s ease infinite forwards 0s;
+    color: var(--primary);
+}
+/* ==========================*\
+        Spinner Animation start
+|*============================*/
+@keyframes spinner{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* ==========================*\
+        Spinner Animation End
+|*============================*/
+nav>label>#fa-cog{
+font-size: 3.5rem;
+cursor: pointer;
+
+}
+nav ul{
+    background-color: var(--bg);
+    display: inline-block;
+    padding: 2rem 3rem;
+    position: fixed;
+    top: 3rem;
+    right: 5.5rem;
+    z-index: 10;
+    transform: translateX(150%);
+    transition: transform 250ms ease-in-out;
+}
+nav ul li{
+    list-style: none;
+    padding: 2rem;
+}
+nav ul li a{
+    color: var(--txt_color);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    transition: color .1s ease-in;
+}
+nav ul li a.selected,nav ul li a:hover{
+    color: var(--primary);
+}
+nav ul li a i{
+    margin-right: 1rem;
+}
+#checkToggler:checked ~ #sideMenu{
+    transform: translateX(0);
+}
+/* ==========================*\
+        Navegation end
+|*============================*/
+
