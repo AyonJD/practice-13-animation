@@ -241,3 +241,21 @@ nav ul li a i{
     font-size: 2rem;
 }
 /* ==============Main content animation done============= */
+/* ===================Responsiveness========================= */
+@media only screen and (max-width: 660px) {
+    .main-content .first-header{
+        font-size: 3rem;
+        font-weight: 400;
+        left: -10rem;
+    } 
+    .main-content .own_name{
+        font-size: 10rem;
+        background-size: 51rem 12rem;
+        background-position: 9px 4rem;
+        margin-top: -3rem;
+    }
+    .main-content h5{
+        left: -2rem;
+        font-size: 1.5rem;
+    }
+}
