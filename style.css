@@ -257,5 +257,29 @@ nav ul li a i{
     .main-content h5{
         left: -2rem;
         font-size: 1.5rem;
+        font-weight: 500;
+    }
+}
+@media only screen and (max-width: 342px) {
+    .main-content .first-header{
+        font-size: 2rem;
+        font-weight: 300;
+        left: -9rem;
+    } 
+    .main-content .own_name{
+        font-size: 8rem;
+        background-size: 50rem 12rem;
+        background-position: 9px 3rem;
+        margin-top: -2rem;
+        animation: textAmination 1s linear infinite forwards;
+    }
+    .main-content h5{
+        left: 1rem;
+        font-weight: 400;
+    }
+    @keyframes textAmination {
+        100%{
+            background-position: 15rem 0;
+        }
     }
 }
